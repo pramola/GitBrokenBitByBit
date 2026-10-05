@@ -11,10 +11,16 @@ git diff branch_1 branch_2 : show the diff b/w two branches current/lastest HEAD
 ```
 
 
-Term	What it is
-HEAD	The last commit (snapshot in .git/objects)
-Index (Staging Area)	The "next commit" blueprint in .git/index
-Working Tree	Your actual workspace directory on disk
+    
+	
+	
+	
+
+| Term  | What it is | 
+| -------- | -------- | 
+| HEAD   | The last commit (snapshot in .git/objects)  | 
+| Index (Staging Area)  | The "next commit" blueprint in .git/index   | 
+| Working Tree   | Your actual workspace directory on disk  | 
 
 ```mermaid
 flowchart TD
