@@ -10,6 +10,12 @@ git diff commitID_1 commitID_2 : show the difference between the two commit ids
 git diff branch_1 branch_2 : show the diff b/w two branches current/lastest HEAD to their common ancestor
 ```
 
+
+Term	What it is
+HEAD	The last commit (snapshot in .git/objects)
+Index (Staging Area)	The "next commit" blueprint in .git/index
+Working Tree	Your actual workspace directory on disk
+
 ```mermaid
 flowchart TD
     A[git diff] --> B{Which two sides?}
