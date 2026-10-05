@@ -18,3 +18,25 @@ Step	Action
 3	Compute the blob's SHA-1	(done inside step 2)
 4	Write/update an entry in .git/index with: path, mode, blob SHA-1, stat info	
         Command : git update-index --add --cacheinfo 100644 <sha> file
+
+
+
+```sequenceDiagram
+    participant User
+    participant Git as git add
+    participant IDX as Index (.git/index)
+
+    User->>Git: git add .
+    activate Git
+
+    Git->>Git: scan working dir
+    Git->>Git: build list of files<br/>[file1.txt, file2.txt, file3.txt, ...]
+
+    loop for each file in list
+        Git->>Git: hash content → blob SHA
+        Git->>IDX: add entry (path, mode, blobSHA)
+    end
+
+    IDX-->>Git: index updated
+    Git-->>User: done
+    deactivate Git   ```
