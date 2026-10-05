@@ -41,7 +41,7 @@ After commiting the changes
 
     nothing to commit, working tree clean```
 
-
+```mermaid
 graph LR
     A[Working Directory on disk] -- 'git add' --> B[Staging Area]
     B -- 'git commit' --> C[Local Repository .git folder]  
