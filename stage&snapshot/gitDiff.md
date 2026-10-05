@@ -1,0 +1,1 @@
+This command is used to show changes between the different levels of the current branch, workspace directory and commit history
