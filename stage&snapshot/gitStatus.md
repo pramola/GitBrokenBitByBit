@@ -1,4 +1,4 @@
-This command is used to check for changes that are sitting in your current folder/git repository (local changes).
+This command is used to check for changed/created files that are sitting in your current folder/git repository (local changes).
 
 Local Changes : The changes made by you on the file sitting in your repository. Also called as working directory. 
 
