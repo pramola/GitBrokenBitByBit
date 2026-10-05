@@ -41,3 +41,9 @@ After commiting the changes
 
     nothing to commit, working tree clean```
 
+
+graph LR
+    A[Working Directory on disk] -- 'git add' --> B[Staging Area]
+    B -- 'git commit' --> C[Local Repository .git folder]  
+    
+     
