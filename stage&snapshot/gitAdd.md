@@ -40,4 +40,5 @@ sequenceDiagram
 
     IDX-->>Git: index updated
     Git-->>User: done
-    deactivate Git   ```
+    deactivate Git
+```
