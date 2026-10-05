@@ -21,7 +21,8 @@ Step	Action
 
 
 
-```sequenceDiagram
+```mermaid
+sequenceDiagram
     participant User
     participant Git as git add
     participant IDX as Index (.git/index)
