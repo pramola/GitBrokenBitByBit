@@ -8,7 +8,7 @@ Local Repository: The .git(hidden folder) is the folder where all your changes a
 
 Staging : Intermediate region (Buffer zone) between your working directory and local repository. Here you add the files(their changes) that you want to commit to git so that they are registered in the git chain(branch)
 
-Commit: The changes are not registered locally and ready to be pushed to parent branch or main(top) branch. The changes are not visible to other till now the changes need to be merged in the main branch (pushing changes)
+Commit: The changes are  registered locally and ready to be pushed to parent branch or main(top) branch. The changes are not visible to other till  the changes need to be merged in the main branch (pushing changes)
 
 The difference after creation of a file 
 
