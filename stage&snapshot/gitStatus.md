@@ -46,7 +46,7 @@ The three regions where the changes travel.
 graph LR
     A[Working Directory on disk] -- 'git add' --> B[Staging Area]
     B -- 'git commit' --> C[Local Repository .git folder]  
-    
+```
 
 Git status - a safe, read-only command
 ```mermaid
@@ -62,3 +62,4 @@ graph TD
     C -->|"staged changes (index vs HEAD)"| SA[Staging Area]
     D -->|"unstaged changes (worktree vs index)"| WD[Working Directory]
     E -->|"never added to git"| WD   
+```
