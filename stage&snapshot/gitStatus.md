@@ -41,11 +41,14 @@ After commiting the changes
 
     nothing to commit, working tree clean```
 
+The three regions where the changes travel.
 ```mermaid
 graph LR
     A[Working Directory on disk] -- 'git add' --> B[Staging Area]
     B -- 'git commit' --> C[Local Repository .git folder]  
     
+
+Git status - a safe, read-only command
 ```mermaid
 graph TD
     subgraph "git status output"
