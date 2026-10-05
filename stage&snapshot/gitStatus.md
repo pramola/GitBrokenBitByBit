@@ -47,3 +47,15 @@ graph LR
     B -- 'git commit' --> C[Local Repository .git folder]  
     
      
+graph TD
+    subgraph "git status output"
+        A["On branch main"]
+        B["Your branch is ahead of 'origin/main' by 1 commit"]
+        C["Changes to be committed:"]
+        D["Changes not staged for commit:"]
+        E["Untracked files:"]
+    end
+
+    C -->|"staged changes (index vs HEAD)"| SA[Staging Area]
+    D -->|"unstaged changes (worktree vs index)"| WD[Working Directory]
+    E -->|"never added to git"| WD   
